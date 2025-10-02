@@ -105,9 +105,7 @@ body {
 .logo-black {
     color: #2E2F42;
 }
-.page-nav {
-    padding-left: 16px;
-}
+
 .burger-btn {
     padding: 0;
     border: none;
@@ -218,7 +216,7 @@ body {
 @media screen and (min-width: 1158px) {
     .logo {
         margin-right: 76px;
-        margin-left: 156px;
+       
     }
     
 .contacts-list {
@@ -411,8 +409,9 @@ body {
     background-size: cover;
     background-position: center;
     max-width: 320px;
-    height: 432px;
     background-repeat: no-repeat;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 .hero-section .container {
     display: flex;
@@ -430,7 +429,7 @@ body {
     color: #FFFFFF;
     margin: 0 auto;
     max-width: 216px;
-    padding-top: 72px;
+
     
 }
 
@@ -456,8 +455,8 @@ body {
 @media screen and (min-width: 768px) {
 .hero-section {
     max-width: 768px;
-    height: 436px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab.jpg);
+    padding: 112px 0;
  }
 .hero-title {
     font-size: 56px;
@@ -487,7 +486,6 @@ body {
             background-size: cover;
             background-position: center;
             max-width: 1440px;
-            height: 600px;
             background-repeat: no-repeat;
     
         }
@@ -517,7 +515,7 @@ body {
 
 /* services mob*/
 .services {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 .visually-hidden {
     position: absolute;
@@ -571,7 +569,6 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
-        row-gap: 72px;
     }
     .container-flex .services-list {
         flex-basis: calc((100% - 24px) / 2);
@@ -584,7 +581,6 @@ body {
 /*services desktop*/
 @media screen and (min-width:1158px){
     .container-flex{
-        padding: 120px 0;
         margin: 0;
         flex-wrap: nowrap;
     }
@@ -625,6 +621,7 @@ body {
 
 /*team mob*/
 .team {
+    padding: 96px 0;
     background: #f4f4fd;
 }
 .team-title {
@@ -636,7 +633,6 @@ body {
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 72px;
-    padding-top: 96px;
 }
 .team-list-container {
     display: flex;
@@ -644,7 +640,6 @@ body {
     gap: 72px;
     justify-content: center;
     align-items: flex-start;
-    padding: 72px 28px;
 }
 .team-list-container .team-list{
     width: 100%;
@@ -746,6 +741,9 @@ svg .icon-social-links-team {
 }
 
 /*portfolio mob*/
+.portfolio {
+    padding: 96px 0;
+}
 .portfolio-title {
     color: #2E2F42;
     font-weight: 700;
@@ -756,7 +754,6 @@ svg .icon-social-links-team {
     text-transform: capitalize;
     margin-bottom: 72px;
     margin-top: 0;
-    padding-top: 96px;
 }
 .portfolio-list-container {
     display: flex;
@@ -858,7 +855,7 @@ svg .icon-social-links-team {
 .page-footer {
     display: flex;
     background: #2E2F42;
-    padding: 96px 16px;
+    padding: 96px 0;
     margin-top: 0;
 }
 .footer-container {
@@ -874,7 +871,6 @@ svg .icon-social-links-team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 .logo-footer {
     font-family: Raleway, sans-serif;
@@ -899,7 +895,7 @@ svg .icon-social-links-team {
     color: #f4f4fd;
     max-width: 264px;
     margin: 0 auto;
-    text-align: center;
+    
 }
 .footer-media{
     display: flex;
@@ -1077,12 +1073,9 @@ svg .icon-social-links-team {
 }
 .footer-input{
     text-align: left;
-    margin-top: 16px;
     min-width: 264px;
 }
-.footer-button{
-    margin-top: 16px;
-}
+
 
 }
 
@@ -1102,7 +1095,7 @@ svg .icon-social-links-team {
     gap: 0;
     width: 100%;
     min-width: 1158px;
-    padding: 0;
+    padding: 0 15px;
     margin: 0 auto;
     
  }
@@ -1115,7 +1108,7 @@ svg .icon-social-links-team {
  }
 .footer-media{
     align-items: flex-start;
-    margin-right: auto;
+    margin-right: 80px;
 }
 .form-footer-title{
     text-align: left;
@@ -1126,12 +1119,9 @@ svg .icon-social-links-team {
     
 }
 .footer-form {
-    margin: 16px 0 0 auto;
     padding: 0;
-    max-width: 483px;
 }
 .footer-form-container{
-    flex-direction: row;
     align-items: flex-end;
     max-width: none;  
     margin: 0; 
@@ -1148,8 +1138,8 @@ svg .icon-social-links-team {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
-    }
-  /*  
+    }  
+  /*
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1160,8 +1150,7 @@ svg .icon-social-links-team {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
-*/
+}*/
 .modal {
     top: 50%;
     left: 50%;
@@ -1329,10 +1318,10 @@ svg .icon-social-links-team {
       line-height: 1.17;
       color: #8e8f99;
       letter-spacing: 0.04em;
+      cursor: pointer;
       margin-left: 8px;
       white-space: nowrap;
       align-items: center;
-      cursor: pointer;
 
   }
 
